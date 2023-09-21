@@ -83,7 +83,7 @@ function App() {
         setCount(++count)
         console.log(count)
       }}
-      >Click Me, I was alraedy clicked{count}times</button>
+      >Click Me, I was already clicked{count}times</button>
     </div>
     </div>
   </section>
