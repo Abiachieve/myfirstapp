@@ -1,6 +1,7 @@
 import Card from './card.jsx'
-
+import {useState} from 'react'
 function App() {
+  let [count,setCount] = useState(0)
   const data = [
     {
       plan:"FREE",
@@ -76,6 +77,14 @@ function App() {
         })
       }
       </div>
+      <div>
+      <button className='btn btn-danger'
+      onClick={()=>{
+        setCount(++count)
+        console.log(count)
+      }}
+      >Click Me, I was alraedy clicked{count}times</button>
+    </div>
     </div>
   </section>
     </>
